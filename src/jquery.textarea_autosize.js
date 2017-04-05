@@ -31,14 +31,14 @@
 
       // keyup is required for IE to properly reset height when deleting text
       this.$element.on('input keyup', function(event) {
-        var $window = $(window);
-        var currentScrollPosition = $window.scrollTop();
+        var $scrollParent = $(this).scrollParent();
+        var currentScrollPosition = $scrollParent.scrollTop();
 
         $(this)
           .height(0)
           .height(this.scrollHeight - diff);
 
-        $window.scrollTop(currentScrollPosition);
+        $scrollParent.scrollTop(currentScrollPosition);
       });
     }
   };
