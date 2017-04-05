@@ -1,3 +1,8 @@
+# Fork notes 
+
+Ensure loading ´https://github.com/slindberg/jquery-scrollparent´ after jquery and before this package.
+
+
 # textarea-autosize
 
 This is a jQuery plugin for vertically adjusting a textarea based on user input and controlling any presentation in CSS. <strong>No clone or ghost elements</strong> used. &#x1f609;
